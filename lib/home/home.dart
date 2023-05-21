@@ -19,22 +19,19 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
           backgroundColor: const Color(0x001e1e1e),
-          body: Center(
+          body: Padding(
+            padding: const EdgeInsets.all(50.0),
             child: ElevatedButton(
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(buttonColor)),
                 onPressed: () {
-                  setState(() {
-                    buttonColor = Colors.transparent;
-                    textColor = Colors.transparent;
-                  });
                   showModalBottomSheet(
                       elevation: 0,
                       backgroundColor: const Color(0x001e1e1e),
                       context: context,
                       isScrollControlled: true,
                       builder: (b) {
-                        return Container(
+                        return SizedBox(
                           height: MediaQuery.of(context).size.height * 0.95,
                           child: Column(
                             children: [
