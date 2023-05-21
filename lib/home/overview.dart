@@ -172,72 +172,74 @@ class PsychoEducationSection extends StatelessWidget {
             borderRadius: BorderRadius.circular(32),
             border:
                 Border.all(color: const Color.fromRGBO(255, 255, 255, 0.15))),
-        child: ExpansionTile(
-          title: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 17, right: 17, top: 20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const CustomText(
-                      title: 'PSYCHO-EDUCATION',
-                      color: Color.fromRGBO(195, 231, 29, 1),
-                      fontSize: 10,
-                      fontWeight: FontWeight.w600,
-                    ),
-                    vs8,
-                    const CustomText(
-                      title:
-                          'Write what a world without your partner feels like? What is the color, shape, and smell of this feeling of loss? What would you like to be the color of this feeling of loss?',
-                      color: Color.fromRGBO(179, 179, 179, 1),
-                      fontSize: 14,
-                    ),
-                    vs20,
-                    const CustomText(
-                      title: 'Journal prompt by PSY, your mental health AI',
-                      color: Color.fromRGBO(179, 179, 179, 1),
-                      fontSize: 11,
-                    ),
-                    vs12,
-                  ],
-                ),
-              ),
-              const Divider(color: Color.fromRGBO(255, 255, 255, 0.15)),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        CustomText(
-                            title: 'written by PSY, your mental health AI',
-                            color: Color.fromRGBO(179, 179, 179, 1),
-                            fontSize: 12)
+        child: Column(
+          children: [
+            ExpansionTile(
+              iconColor: Colors.white,
+              collapsedBackgroundColor: Colors.white,
+              title: Column(
+                children: [
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 17, right: 17, top: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const CustomText(
+                          title: 'PSYCHO-EDUCATION',
+                          color: Color.fromRGBO(195, 231, 29, 1),
+                          fontSize: 10,
+                          fontWeight: FontWeight.w600,
+                        ),
+                        vs8,
+                        const CustomText(
+                          title:
+                              'Write what a world without your partner feels like? What is the color, shape, and smell of this feeling of loss? What would you like to be the color of this feeling of loss?',
+                          color: Color.fromRGBO(179, 179, 179, 1),
+                          fontSize: 14,
+                        ),
+                        vs20,
+                        const CustomText(
+                          title: 'Journal prompt by PSY, your mental health AI',
+                          color: Color.fromRGBO(179, 179, 179, 1),
+                          fontSize: 11,
+                        ),
+                        vs12,
                       ],
                     ),
-                    const Icon(
-                      Icons.arrow_drop_down_sharp,
-                      color: Color.fromRGBO(179, 179, 179, 1),
-                    )
-                  ],
-                ),
-              )
-            ],
-          ),
-          children: const [
-            Padding(
-              padding:
-                  EdgeInsets.only(left: 17, right: 17, top: 20, bottom: 20),
-              child: CustomText(
-                title:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                color: Color.fromRGBO(179, 179, 179, 1),
-                fontSize: 14,
+                  ),
+                ],
               ),
+              children: const [
+                Padding(
+                  padding:
+                      EdgeInsets.only(left: 32, right: 17, top: 20, bottom: 20),
+                  child: CustomText(
+                    title:
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    color: Color.fromRGBO(179, 179, 179, 1),
+                    fontSize: 14,
+                  ),
+                ),
+              ],
             ),
+            const Divider(color: Color.fromRGBO(255, 255, 255, 0.15)),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: const [
+                      CustomText(
+                          title: 'written by PSY, your mental health AI',
+                          color: Color.fromRGBO(179, 179, 179, 1),
+                          fontSize: 12)
+                    ],
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
