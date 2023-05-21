@@ -176,7 +176,7 @@ class PsychoEducationSection extends StatelessWidget {
           children: [
             ExpansionTile(
               iconColor: Colors.white,
-              collapsedBackgroundColor: Colors.white,
+              collapsedIconColor: Colors.white,
               title: Column(
                 children: [
                   Padding(
